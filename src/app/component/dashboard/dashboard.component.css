@@ -1,0 +1,39 @@
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+li {
+    list-style: none;
+
+   
+    padding-top: 15px;
+    text-align: center;
+
+    
+}
+.menu-sec{display: none;
+}
+.menudrop-sec{display:none;}
+
+@media screen and (max-width: 960px) {
+    .menu-first{
+       display: none;
+    }
+    .menu-sec{display: block;
+   }
+  }
+   .bordermenü{
+    border: 1px solid; gap: 20px;}
+  
+
+  @media screen and (max-width: 960px) {
+    .menudrop-first{
+        display: none;}
+    
+    .menudrop-sec{display: block;
+        }
+    
+  }

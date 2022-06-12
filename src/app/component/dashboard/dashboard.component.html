@@ -1,0 +1,415 @@
+<div class="container-fluid px-5 mt-2 menu-first">
+  <ul class="d-flex justify-content-center border rounded-1">
+    <li class="p-3 mx-3"><a routerLink="">Profil Bilgilerim</a></li>
+    <li class="p-3 mx-3"><a routerLink="">İhalelerim</a></li>
+    <li class="p-3 mx-3"><a routerLink="">Tekliflerim</a></li>
+    <li class="p-3 mx-3"><a routerLink="">Favorilerim</a></li>
+    <li class="p-3 mx-3"><a routerLink="">Gelince Haber Ver</a></li>
+    <li class="p-3 mx-3"><a routerLink="">Bildirimlerim</a></li>
+    <li class="p-3 mx-3"><a routerLink="">Bildirim İzinleri</a></li>
+  </ul>
+</div>
+<div class="container-fluid px-3 mx-5 menu-sec">
+    <div class="row row-cols-2 ">
+      <div class="col"><a routerLink="">Profil Bilgilerim</a></div>
+      <div class="col"><a routerLink="">İhalelerim</a></div>
+      <div class="col"><a routerLink="">Tekliflerim</a></div>
+  
+      <div class="col"><a routerLink="">Favorilerim</a></div>
+      <div class="col"><a routerLink="">Gelince Haber Ver</a></div>
+      <div class="col"><a routerLink="">Bildirimlerim</a></div>
+      <div class="col"><a routerLink="">Bildirim İzinleri</a></div>
+    
+    </div>
+  </div>
+
+<div class="container">
+  <div class="container">
+    <div class="row gx-5 p-5">
+      <div class="col-lg-3 col-sm-4">
+        <div
+          class="py-4 px-4 border rounded shadow-sm  menudrop-first"
+          style="background-color: #f0f0f0"
+        >
+          <div class="border rounded-pill text-center p-2 my-4 bg-white">
+            <a routerLink="" class="text-black-50">Onay Bekleyenler</a>
+          </div>
+          <div class="border rounded-pill text-center p-2 my-4 bg-white">
+            <a routerLink="" class="text-black-50">Yayında Olanlar</a>
+          </div>
+          <div class="border rounded-pill text-center p-2 my-4 bg-white">
+            <a routerLink="" class="text-black-50">Sonuçlananlar</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown menudrop-sec">
+          <button ngbDropdownToggle class="btn btn-lg btn-secondary" type="button" id="dropdownMenuButton1" aria-expanded="false">
+        Yapmak İstediğiniz İşlemi Seçiniz
+        </button>
+          <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+            <li><a ngbDropdownItem href="#">Onay Bekleyenler</a></li>
+            <li><a ngbDropdownItem href="#">Yayında Olanlar</a></li>
+            <li><a ngbDropdownItem href="#">Sonuçlananlar</a></li>
+          </ul>
+        </div>
+        
+   
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="col-lg-9 col-sm-4">
+        <div class="card shadow border-0 mt-4 position-relative">
+          <div class="row g-0 p-2">
+            <div class="col-lg-4 p-4">
+              <img src="assets/1.jpg" class="img-fluid rounded-start h-100" />
+            </div>
+            <div class="col-lg-8 py-3">
+              <p class="text-capitalize fw-bold">
+                Otomatik 5 Eksen Kafalı Cme Fs-5 Bench Tip Cnc İşleme Merkezi
+              </p>
+              <div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>
+                      Hedef Satış Fiyatınız<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺2.206.029</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <ng-template #popContent>
+                      <div class="container">
+                        <div class="row fw-bold d-flex" style="color: #19d894">
+                          <div class="col-lg-6 p-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-info-circle-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="col-lg-6">
+                            <span class="text-justify"
+                              >Hedeflediğiniz satış fiyatı
+                              geçilmiştir.Tebrikler!</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+
+                    <p
+                      [placement]="['right']"
+                      [autoClose]="'inside'"
+                      [ngbPopover]="popContent"
+                    >
+                      Verilen Mevcut Teklif<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.300.000</span
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="opacity-50 fs-5 fw-light">
+                    <p class="card-text">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-alarm"
+                        viewBox="0 0 16 19"
+                      >
+                        <path
+                          d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                        />
+                        <path
+                          d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                        />
+                      </svg>
+                      Bitiş Tarihi: 15.02.2022 13:00
+                    </p>
+                  </div>
+
+                  <div
+                    class="position-absolute end-0 bottom-0 border bg-light p-1 border rounded-top"
+                  >
+                    <a class="p-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow border-0 mt-4 position-relative">
+          <div class="row g-0 p-2">
+            <div class="col-lg-4 p-4">
+              <img src="assets/2.jpg" class="img-fluid rounded-start h-100" />
+            </div>
+            <div class="col-lg-8 py-3">
+              <p class="text-capitalize fw-bold">
+                Multinorma 6000 Cnc Köprü Tip İşleme Merkezi Ref-3215
+              </p>
+              <div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>
+                      Hedef Satış Fiyatınız<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.206.029</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p [placement]="['right']" [ngbPopover]="popContent">
+                      Verilen Mevcut Teklif<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.500.000</span
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="opacity-50 fs-5 fw-light">
+                    <p class="card-text">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-alarm"
+                        viewBox="0 0 16 19"
+                      >
+                        <path
+                          d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                        />
+                        <path
+                          d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                        />
+                      </svg>
+                      Bitiş Tarihi: 20.02.2022 14:00
+                    </p>
+                  </div>
+
+                  <div
+                    class="position-absolute end-0 bottom-0 border bg-light p-1 border rounded-top"
+                  >
+                    <a class="p-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mt-4 position-relative">
+          <div class="row g-0 p-2">
+            <div class="col-lg-4 p-4">
+              <img src="assets/3.jpg" class="img-fluid rounded-start h-100" />
+            </div>
+            <div class="col-lg-8 py-3">
+              <p class="text-capitalize fw-bold">
+                Zimmerman Fz30/5 Köprü Tipi İşleme Merkezi
+              </p>
+              <div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>
+                      Hedef Satış Fiyatınız<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.602.951</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p
+                      [placement]="['right']"
+                      [autoClose]="'inside'"
+                      [ngbPopover]="popContent"
+                    >
+                      Verilen Mevcut Teklif<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.200.000</span
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="opacity-50 fs-5 fw-light">
+                    <p class="card-text">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-alarm"
+                        viewBox="0 0 16 19"
+                      >
+                        <path
+                          d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                        />
+                        <path
+                          d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                        />
+                      </svg>
+                      Bitiş Tarihi: 25.02.2022 18:00
+                    </p>
+                  </div>
+
+                  <div
+                    class="position-absolute end-0 bottom-0 border bg-light p-1 border rounded-top"
+                  >
+                    <a class="p-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mt-4 position-relative">
+          <div class="row g-0 p-2">
+            <div class="col-lg-4 p-4">
+              <img src="assets/4.jpg" class="img-fluid rounded-start h-100" />
+            </div>
+            <div class="col-lg-8 py-3">
+              <p class="text-capitalize fw-bold">
+                Deckel maho dmc-100V cnc dik işleme merkezi - 1999
+              </p>
+
+              <div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>
+                      Hedef Satış Fiyatınız<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺2.206.029</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p
+                      [placement]="['right']"
+                      [autoClose]="'inside'"
+                      [ngbPopover]="popContent"
+                    >
+                      Verilen Mevcut Teklif<br /><span
+                        style="color: #f79e31"
+                        class="fs-4"
+                        >₺1.300.000</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="opacity-50 fs-5 fw-light">
+                    <p class="card-text">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-alarm"
+                        viewBox="0 0 16 19"
+                      >
+                        <path
+                          d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                        />
+                        <path
+                          d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                        />
+                      </svg>
+                      Bitiş Tarihi: 15.02.2022 13:00
+                    </p>
+                  </div>
+
+                  <div
+                    class="position-absolute end-0 bottom-0 border bg-light p-1 border rounded-top"
+                  >
+                    <a class="p-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

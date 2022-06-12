@@ -1,0 +1,48 @@
+.help{
+    padding-right: 10px;
+
+    border-right: 3px solid #F79E31;
+    text-decoration:revert;
+    color: #F79E31;
+    font-size:17px;
+    font-weight: 600;
+    
+
+}
+.help:nth-child(3){
+    border:0;
+}
+.title{
+    font-size: 15px;
+    text-align:initial;
+}
+.contact-left ul{
+    padding-left:0;
+   
+   
+    font-size: 15px;
+}
+.contact-left ul li {
+    text-align: initial;
+    font-size:15px;
+    font-weight: 500;
+    
+ 
+}
+.contact-left-box{
+    display: flex;
+
+}
+.rigtt{
+    margin-right: 15px;
+}
+
+.contact-left-box div ul{padding: 0px!important;}
+.contact-left-box div ul li{padding: 0px!important;}
+@media screen and (max-width: 960px) {
+    .contact-right ul{
+float: start!important;}
+    
+    .contact-left-box{display: block;}
+    
+  }

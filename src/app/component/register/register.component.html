@@ -1,0 +1,71 @@
+
+
+
+
+
+<div class="container d-flex justify-content-center  align-items-center yukseklik">
+
+  
+
+<div class="container mt-5">
+  <div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Cnc.bid </h3>
+                    <p></p>
+                    <form [formGroup]="form" (ngSubmit)="SaveData()">
+
+                        <div class="col-md-12">
+                           <input class="form-control" type="text" name="name" placeholder=" Name"  formControlName="name" >
+                         <small *ngIf="form.get('name').invalid && form.get('name').touched" class="text-danger ">Name is required</small>
+                           
+                        </div>
+                        <div class="col-md-12">
+                          <input class="form-control" type="text" name="surname" placeholder="Surname " formControlName="surname" >
+                          <small *ngIf="form.get('surname').invalid && form.get('surname').touched" class="text-danger ">Surname is required</small>
+                       </div>
+
+                       <div class="col-md-12">
+                          <input class="form-control" type="password" name="password" placeholder="Password"  formControlName="password" >
+                          <small *ngIf="form.get('password').invalid && form.get('password').touched" class="text-danger ">Password is required</small>
+                       </div>
+                    
+                        
+                        <div class="col-md-12">
+                          <input class="form-control" type="email" name="number" placeholder="Email"  formControlName="email" >
+                          <small *ngIf="form.get('email').invalid && form.get('email').touched" class="text-danger ">Email is required</small>
+                      </div>
+                       <div class="col-md-12 mt-3">
+                        <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"  formControlName="gender" value="Male">
+                        <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+                       
+
+                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off"  formControlName="gender" value="Female" >
+                        <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+                      
+
+                        
+                        </div>
+
+              
+                            <button id="submit" [disabled]="form.invalid" type="submit" class="btn btn-primary ">Register</button>
+                  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+</div>
+
+
+</div>
+
