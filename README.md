@@ -3,9 +3,9 @@
 # CncProject
 
 
-<h1>ReactiveForms</h1>
-HttpClient
-Responsive Design
+<h3>ReactiveForms</h3>
+<h3>HttpClient</h3>
+<h3>Responsive Design</h3>
 
 
 
